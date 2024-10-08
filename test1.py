@@ -1,7 +1,8 @@
 import ollama
 
 stream = ollama.chat(
-    model="llama3.1:70b",
+    model="llama3.1",
+    # model="llama3.1:70b",
     messages=[{"role": "user", "content": "What is Ollama?"}],
     stream=True,
 )
